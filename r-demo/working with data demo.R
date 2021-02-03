@@ -1,7 +1,7 @@
 # 1. working with file base data - data import
 
 #Set the working directory that contains the data file
-setwd("/Users/jianfang.zhang/Documents/project_info/R-Data/r-demo")
+setwd(".../R-Data/r-demo")
 
 #Import/Load  the data into R-Read a tab-delimited data file
 cars <- read.table(
