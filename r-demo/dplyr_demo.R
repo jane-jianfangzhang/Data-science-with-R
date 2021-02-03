@@ -1,9 +1,14 @@
 # 1. working with file base data - data import
 
 #Set the working directory that contains the data file
+<<<<<<< Updated upstream:r-demo/working with data demo.R
 setwd(".../R-Data/r-demo")
+=======
+setwd("/Users/jianfang.zhang/Documents/project_info/K6_performance_testing/Github_personal/Data-science-with-R/r-demo")
+>>>>>>> Stashed changes:r-demo/dplyr_demo.R
 
 #Import/Load  the data into R-Read a tab-delimited data file
+
 cars <- read.table(
   file = "Cars.txt",
   header = TRUE,
@@ -57,5 +62,28 @@ temp <- summarise(
   .data = temp,
   Avg.Consumption = mean(Consumption)
 )
-
 head(temp)
+
+temp <- arrange(
+  .data = temp,
+  desc(Avg.Consumption)
+)
+head(temp)
+
+#Covert result to data frame
+efficiency <- as.data.frame(temp)
+print(efficiency)
+
+#Assigning the results of data %>% pipe operator
+efficiency <- cars %>%
+  select(Transmission,Cylinders,Fuel.Economy)  %>%
+  filter(Transmission == "Automatic") %>%
+  mutate(Consumption = Fuel.Economy *0.425) %>%
+  group_by(Cylinders) %>%
+  summarise(Avg.Consumption = mean(Consumption)) %>%
+  arrange(desc(Avg.Consumption)) %>%
+  as.data.frame()
+  
+  
+print(efficiency) 
+  
