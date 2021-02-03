@@ -1,0 +1,25 @@
+{
+    "id": "C5986027",
+    "path": "~/Documents/project_info/K6_performance_testing/Github_personal/Data-science-with-R/r-demo/dplyr_demo.R",
+    "project_path": "dplyr_demo.R",
+    "type": "r_source",
+    "hash": "3386931614",
+    "contents": "",
+    "dirty": true,
+    "created": 1612322788392.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "cursorPosition": "83,18",
+        "scrollLine": "69",
+        "docOutlineVisible": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1612328303,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1612328303345,
+    "read_only": false,
+    "read_only_alternatives": []
+}
